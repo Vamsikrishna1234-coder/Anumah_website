@@ -1,0 +1,459 @@
+/* Hero Section */
+        .hero {
+            height: 100vh;
+            background: 
+                        url('/assets/images/anumah\ gate\ entrance.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            width: 100% ;
+        }
+/* Intro Section */
+.intro-section {
+  padding: 80px 0;
+  background: #f5f7fa;
+}
+
+.intro-section .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.intro-left {
+  flex: 1;
+}
+
+.intro-left .label {
+  font-size: 26px;
+  color: #ff7b00;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-style: initial;
+}
+
+.intro-left h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.3;
+}
+
+.intro-right {
+  flex: 1.2;
+}
+
+.intro-right p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .intro-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-left h1 {
+    font-size: 32px;
+  }
+
+  .intro-right p {
+    font-size: 16px;
+  }
+}
+
+/* Projects Section */
+/* Plants Section */
+.section-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  color: #f58220;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.plants-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.plants-section .container {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.plant-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.plant-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(166, 164, 164, 0.505);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.plant-card .overlay h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 700;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+
+}
+/* Fruit Name Label inside image */
+.fruit-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f58220;
+  padding: 5px 12px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* Hover Effects */
+.plant-card:hover img {
+  transform: scale(0.75); /* squeeze effect */
+}
+
+.plant-card:hover .overlay {
+  opacity: 1;
+}
+
+.plant-card:hover .overlay h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .plants-section .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .plants-section .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* plant layout end */
+/* Master Plan Section */
+.masterplan-section {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.masterplan-section .container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.masterplan-section .section-title {
+  margin-bottom: 40px;
+}
+
+.masterplan-section .section-title h2 {
+  font-size: 32px;
+  color: #f58220;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.masterplan-section .section-title p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.masterplan-section .masterplan-image img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 500px;
+}
+
+.masterplan-section .masterplan-image img:hover {
+  transform: scale(1.02);
+}
+
+/*amenities section*/
+/* Amenities Banner Section */
+.amenities-banner {
+  padding: 80px 0;
+  background: url("/assets/images/cycling-outdoors.jpg") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.amenities-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* dark overlay for readability */
+}
+
+.amenities-banner .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Quote */
+.quote-box h3 {
+  font-size: 24px;
+  line-height: 1.6;
+  font-style: italic;
+  max-width: 500px;
+}
+
+/* Amenities List */
+.amenities-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f58220;
+}
+
+.amenities-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 30px;
+}
+
+.amenities-content ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.amenities-content ul li::before {
+  content: "✔";
+  color: #27ae60;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .amenities-banner .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .quote-box h3 {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .amenities-content ul {
+    columns: 1;
+  }
+}
+
+
+/* club house section */
+/* Clubhouse Section */
+.clubhouse-section {
+  padding: 80px 0;
+  background: #000000;
+  margin-top: 100px;
+}
+
+.clubhouse-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Left Image */
+.clubhouse-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Right Content */
+.clubhouse-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f58220;
+}
+
+.clubhouse-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #fffefe;
+}
+.clubhouse-content h3 {
+    margin-bottom: 10px;
+    color:#f58220;
+}
+.clubhouse-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clubhouse-content ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+  color: #ffffff;
+}
+
+.clubhouse-content ul li::before {
+  content: "★";
+  color: #e67e22;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .clubhouse-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .clubhouse-content ul {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+
+/* temple section */
+/* Temple Section */
+.temple-section {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.temple-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Temple Image */
+.temple-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Left Content */
+.temple-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f58220;
+}
+
+.temple-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.temple-content blockquote {
+  font-style: italic;
+  font-size: 16px;
+  color: #020202;
+  border-left: 4px solid #27ae60;
+  padding-left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .temple-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .temple-content blockquote {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.hero {
+  background: 
+  url('/assets/images/big-buildings.jpg') center/cover no-repeat;
+}
+
+
+.projects-section {
+  padding: 50px 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 450px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border: 5px solid #ffffff; /* Dark blue border like in screenshot */
+  text-align: center;
+  transition: transform 0.3s;
+  width: 1100px;
+  margin-left: 130px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.project-image img {
+  width: 100%;
+  display: block;
+  height: 550px;
+  
+}
+
+/* Info */
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.project-info h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.view-btn {
+  display: inline-block;
+  background: #ff7b00;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.view-btn:hover {
+  background: #e86c00;
+}
+
+
