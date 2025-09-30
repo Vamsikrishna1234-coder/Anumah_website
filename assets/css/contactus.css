@@ -1,6 +1,6 @@
 /* Hero Banner */
     .hero {
-      background: url('/assets/images/contact\ bnr.jpg') center/cover no-repeat;
+      background: url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211233/contact_bnr_ojm39i.jpg') center/cover no-repeat;
       height: 100vh;
       display: flex;
       align-items: center;

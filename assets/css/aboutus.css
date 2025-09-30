@@ -3,8 +3,8 @@
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(12, 12, 12, 0.7), rgba(32, 31, 31, 0.461)), 
-                url('/assets/images/about\ banner.jpg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211228/about_banner_pttnrs.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

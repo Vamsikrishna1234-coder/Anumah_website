@@ -1,0 +1,775 @@
+
+
+/* =========================
+   📱 Extra Small Devices (phones < 480px)
+   ========================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* reduce full height */
+  }
+  .hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills container, crops edges */
+  position: absolute;  /* sits behind overlay */
+}
+
+  .hero-overlay h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.85rem;
+  }
+   .side-menu {
+    width: 80%;        /* make it narrower relative to screen size */
+    left: -80%;        /* hide completely offscreen */
+    padding: 15px;     /* reduce padding */
+  }
+
+  .side-menu ul li a {
+    font-size: 1rem;   /* slightly smaller text */
+  }
+  .logo img {
+    height: 55px;
+    margin-left: 40px;
+  }
+  .enquiry-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    
+  }
+  .menu-toggle {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+  .about-company {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .logo-mask{
+    height: 150px;
+    width: 200px;
+    margin-top: 15px;
+  }
+
+
+  .company-content h2 {
+    font-size: 20px;
+  }
+
+  .company-content p {
+    font-size: 14px;
+  }
+
+  .carousel-slide img {
+    height: 200px;
+  }
+
+  .milestones {
+    padding: 40px 15px;
+  }
+
+  .blog-cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .blog-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;       /* stack items */
+    align-items: center;          /* center horizontally */
+    text-align: center;           /* center text inside */
+  }
+
+  .footer-column {
+    align-items: center;          /* center content inside each column */
+    text-align: center;           /* ensure text is centered */
+  }
+
+  .footer-middle {
+    flex-direction: column;       /* stack middle sections */
+    gap: 30px;                    /* reduce gap for mobile */
+    align-items: center;
+  }
+  .footer-column:first-child {
+    align-items: center;       /* center logo + address */
+  }
+
+  .footer-logo {
+    margin: 0 auto;               /* center logo */
+    margin-bottom: 20px;
+  }
+
+  .footer-address {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+}
+
+
+
+/* =========================
+   💻 Tablets (769px – 1024px)
+   ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-company {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-mask {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .company-content {
+    padding-right: 0;
+  }
+
+  .milestones-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .milestones-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .carousel-slide img {
+    height: 350px;
+  }
+
+  .blog-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+  
+}
+
+
+/* =========================
+   🖥️ Small Laptops & MacBooks (1025px – 1366px)
+   ========================= */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+
+  .about-company {
+    gap: 30px;
+  }
+
+  .logo-mask {
+    width: 500px;
+    height: 750px;
+  }
+
+  .milestones-grid {
+    gap: 30px;
+  }
+
+  .carousel-slide img {
+    height: 420px;
+  }
+
+  .blog-cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+
+  .footer-middle {
+    gap: 40px;
+  }
+}
+
+
+/*about responsive*/
+/* ===============================
+   Extra Responsive Design
+   =============================== */
+
+/* Small Mobile Devices (max 480px) */
+@media (max-width: 480px) {
+    .hero h6 {
+        font-size: 1.8rem;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .hero-content {
+        padding: 0 10px;
+    }
+
+    .overview-grid,
+    .mv-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .mv-card {
+        padding: 20px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 280px;
+        padding: 15px;
+    }
+}
+
+/* Medium Mobiles to Small Tablets (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .hero h6 {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+
+    .hero .tagline {
+        font-size: 1.1rem;
+        margin-right: 0;
+    }
+
+    .overview-grid,
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        flex: 0 0 300px;
+    }
+}
+
+/* Tablets / iPads (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero h6 {
+        font-size: 2.2rem;
+        margin-right: 40px;
+    }
+
+    .hero .tagline {
+        font-size: 1.2rem;
+        margin-right: 40px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .founder-container {
+        flex-direction: row;
+    }
+
+    .testimonial-card {
+        flex: 0 0 320px;
+    }
+}
+
+/* Small Desktops & Laptops (1025px – 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .hero h6 {
+        font-size: 2.5rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.3rem;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Screens / MacBooks / Monitors (1367px and up) */
+@media (min-width: 1367px) {
+    .hero h6 {
+        font-size: 3rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.5rem;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonial-card {
+        flex: 0 0 350px;
+    }
+}
+
+
+/* projects responsive */
+/* ===============================
+   Responsive Design for Projects
+   =============================== */
+
+/* Small Mobiles (max 480px) */
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project-image img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .project-info h3 {
+    font-size: 16px;
+  }
+
+  .project-info h4 {
+    font-size: 14px;
+  }
+
+  .project-info p {
+    font-size: 13px;
+  }
+
+  .view-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Medium Mobiles to Small Tablets (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .project-card {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project-image img {
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .project-info h3 {
+    font-size: 18px;
+  }
+
+  .project-info h4 {
+    font-size: 15px;
+  }
+
+  .view-btn {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+}
+
+/* Tablets / iPads (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project-card {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .project-image img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .project-info h3 {
+    font-size: 20px;
+  }
+
+  .project-info h4 {
+    font-size: 16px;
+  }
+}
+
+/* Small Desktops & Laptops (1025px – 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .project-card {
+    width: 85%;
+    margin-left: 0;
+  }
+
+  .project-image img {
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+/* Large Screens / MacBooks / Monitors (1367px and up) */
+@media (min-width: 1367px) {
+  .project-card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-image img {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+
+/* agrigrain projects */
+/* ===============================
+   Extra Responsive Styles
+   =============================== */
+
+/* Small Mobiles (max 480px) */
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* Intro */
+  .intro-left .label {
+    font-size: 18px;
+  }
+  .intro-left h1 {
+    font-size: 24px;
+  }
+  .intro-right p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 13px ;
+    margin-right: 13px ;
+  }
+
+  /* Plants */
+  .plant-card {
+    width: 100%;
+  }
+  .fruit-name {
+    font-size: 18px;
+  }
+
+  /* Masterplan */
+  .masterplan-section .masterplan-image img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  /* Amenities */
+  .amenities-content h2 {
+    font-size: 24px;
+  }
+  .amenities-content ul li {
+    font-size: 14px;
+  }
+
+  /* Clubhouse */
+  .clubhouse-content h2 {
+    font-size: 24px;
+  }
+  .clubhouse-content p {
+    font-size: 14px;
+  }
+  .clubhouse-content ul li {
+    font-size: 14px;
+  }
+
+  /* Temple */
+  .temple-content h2 {
+    font-size: 24px;
+  }
+  .temple-content p {
+    font-size: 14px;
+  }
+  .temple-content blockquote {
+    font-size: 14px;
+  }
+}
+
+/* Medium Mobiles to Small Tablets (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Hero */
+  .hero {
+    height: 75vh;
+  }
+
+  /* Intro */
+  .intro-left h1 {
+    font-size: 28px;
+  }
+  .intro-right p {
+    font-size: 15px;
+  }
+
+  /* Masterplan */
+  .masterplan-section .masterplan-image img {
+    max-height: 350px;
+  }
+
+  /* Clubhouse & Temple */
+  .clubhouse-content h2,
+  .temple-content h2 {
+    font-size: 28px;
+  }
+  .clubhouse-content p,
+  .temple-content p {
+    font-size: 15px;
+  }
+}
+
+/* Tablets / iPads (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Hero */
+  .hero {
+    height: 80vh;
+  }
+
+  /* Intro */
+  .intro-left h1 {
+    font-size: 32px;
+  }
+
+  /* Plants */
+  .plants-section .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Masterplan */
+  .masterplan-section .masterplan-image img {
+    height: 400px;
+  }
+
+  /* Clubhouse & Temple */
+  .clubhouse-content h2,
+  .temple-content h2 {
+    font-size: 32px;
+  }
+  .clubhouse-content p,
+  .temple-content p {
+    font-size: 16px;
+  }
+}
+
+/* Small Desktops & Laptops (1025px – 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .hero {
+    height: 90vh;
+  }
+  .masterplan-section .masterplan-image img {
+    height: 450px;
+  }
+}
+
+/* Large Screens / MacBooks / Monitors (1367px and up) */
+@media (min-width: 1367px) {
+  .hero {
+    height: 100vh;
+  }
+  .masterplan-section .masterplan-image img {
+    height: 500px;
+  }
+}
+
+
+/* contact responsive */
+/* ===============================
+   Extra Responsive Styles
+   =============================== */
+
+/* Small Mobiles (max 480px) */
+@media (max-width: 480px) {
+  /* Hero Banner */
+  .hero {
+    height: 70vh;
+    padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .hero h6 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    margin-right: 0;
+  }
+  .hero .tagline {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 30px 5%;
+    gap: 20px;
+  }
+  .contact-map iframe {
+    height: 300px;
+  }
+}
+
+/* Medium Mobiles (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Hero Banner */
+  .hero {
+    height: 75vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  .hero h6 {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+  .hero .tagline {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  /* Contact */
+  .contact-map iframe {
+    height: 350px;
+  }
+}
+
+/* Tablets (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Hero Banner */
+  .hero {
+    height: 80vh;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  .hero h6 {
+    font-size: 2.5rem;
+    margin-right: 40px;
+  }
+  .hero .tagline {
+    font-size: 1.3rem;
+    margin-right: 40px;
+  }
+
+  /* Contact */
+  .contact-section {
+    padding: 50px 8%;
+  }
+  .contact-map iframe {
+    height: 400px;
+  }
+}
+
+/* Small Desktops & Laptops (1025px – 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  .contact-map iframe {
+    height: 450px;
+  }
+}
+
+/* Large Screens (1367px and up) */
+@media (min-width: 1367px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+  .contact-map iframe {
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .contact-form h2 {
+    font-size: 1.2rem;
+  }
+  .contact-info h2 {
+    font-size: 1.1rem;
+  }
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .info-box i {
+    margin: 0 0 8px 0;
+  }
+}
+

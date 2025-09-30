@@ -6,15 +6,17 @@
   <title>Real Estate Website</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/aboutus.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="assets/images/Anumah_Logo.png">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211226/Anumah_Logo_ybnkat.png">
 </head>
 <body>
 
-<section class="header-section">
+<section class="header-section" id="hero1">
+
   <div class="header-overlay">
     <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-    <div class="logo"><a href="index.html"><img src="assets/images/Anumah_Logo.png" alt="Logo"></a></div>
+    <div class="logo"><a href="index.html"><img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211226/Anumah_Logo_ybnkat.png" alt="Logo"></a></div>
     <a href="#enquiry" class="enquiry-btn">Enquiry Now</a>
   </div>
 
@@ -36,14 +38,21 @@
 </div>  
 </section>
 
-<!-- White Sticky Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-      <div class="logo"><a href="index.html"><img src="assets/images/Anumah_Logo.png" alt="Logo"></a></div>
-      <a href="#enquiry" class="enquiry-btn">Enquiry Now</a>
-    </div>
-  </header>
+  
+  <div id="enquiryPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h3>Enquiry Now</h3>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -67,7 +76,7 @@
       
       <!-- Right Side: Company Image -->
       <div class="overview-image">
-        <img src="assets/images/company pic.jpg" alt="BuildCraft Company" style="width:100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+        <img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211232/company_pic_qs4cyx.jpg" alt="BuildCraft Company" style="width:100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
       </div>
 
     </div>
@@ -79,23 +88,14 @@
   <div class="founder-container">
     <!-- Founder Image -->
     <div class="founder-image">
-      <img src="/assets/images/founder img.jpg" alt="Founder Image">
+      <img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211233/founder_img_rlqd8o.jpg" alt="Founder Image">
     </div>
     
     <!-- Founder Description -->
     <div class="founder-text">
       <h2>Meet Our Founder</h2>
       <p>
-        Mr. Gowd, the visionary founder of Gowd Infra, has been shaping skylines for over 15+ years. 
-        He combines innovation with quality to deliver landmark residential and commercial projects. 
-        His leadership philosophy focuses on transparency, customer satisfaction, and sustainable development. 
-        Under his guidance, Gowd Infra has successfully completed hundreds of projects across the region. 
-        He believes in creating communities, not just buildings, fostering trust with every client. 
-        Mr. Gowd emphasizes modern design, cutting-edge technology, and attention to detail in every project. 
-        His commitment to excellence has earned numerous awards and industry recognition. 
-        He actively mentors his team, nurturing talent and fostering a culture of creativity. 
-        Beyond real estate, he engages in social initiatives that contribute to community growth. 
-        Driven by passion and vision, Mr. Gowd continues to redefine urban living experiences.
+       Mr. Gowd, the visionary founder of Anumah Infra, has been shaping skylines for over 15+ years. He combines innovation with quality to deliver landmark residential and commercial projects. His leadership philosophy focuses on transparency, customer satisfaction, and sustainable development. Under his guidance, Anumah Infra has successfully completed hundreds of projects across the region. He believes in creating communities, not just buildings, fostering trust with every client. Mr. Gowd emphasizes modern design, cutting-edge technology, and attention to detail in every project. His commitment to excellence has earned numerous awards and industry recognition. He actively mentors his team, nurturing talent and fostering a culture of creativity. Beyond real estate, he engages in social initiatives that contribute to community growth. Driven by passion and vision, Mr. Gowd continues to redefine urban living experiences.
       </p>
     </div>
   </div>
@@ -229,7 +229,7 @@
 
     <!-- Left column: logo + address -->
     <div class="footer-column">
-      <img src="assets/images/Anumah_Logo_white-01.png" alt="Anumah Logo" class="footer-logo">
+      <img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211229/Anumah_Logo_white-01_l06e7u.png" alt="Anumah Logo" class="footer-logo">
       <div class="footer-address">
         Plot No.192, Godha Horizon, Kavuri Hills,<br>
         Madhapur, Hyderabad, Telangana - 500 081<br>
@@ -279,18 +279,21 @@
   <p>
     © 2025 Anumah InfraDevelopers. All Rights Reserved. | 
     <span class="designed-by">
-      Designed by 
-      <a href="https://www.tactadvertising.in/" target="_blank">
-        <img src="assets/images/tact favicon.png" alt="Tact Advertising" class="favicon">
-        <span class="tact-heading">Tact Advertising</span>
-      </a>
-    </span>
+  Designed by 
+  <a href="https://www.tactadvertising.in/" target="_blank">
+    <img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759214210/tact_favicon_white_bkv73k.png" 
+         alt="Tact Advertising" 
+         class="tact-favicon">
+    <span class="tact-heading">Tact Advertising</span>
+  </a>
+</span>
   </p>
 </div>
 </footer>
 
 
 <script src="assets/js/sidemenu.js"></script>
-<script src="assets/js/scrollwhitebg.js"></script>
+<script src="assets/js/enquirycard.js"></script>
+
 </body>
 </html>

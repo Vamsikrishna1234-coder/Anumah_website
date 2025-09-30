@@ -2,7 +2,7 @@
         .hero {
             height: 100vh;
             background: 
-                        url('/assets/images/anumah\ gate\ entrance.jpg') center/cover;
+                        url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211228/anumah_gate_entrance_fazjxj.jpg') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -232,7 +232,7 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 500px;
+  height: 650px;
 }
 
 .masterplan-section .masterplan-image img:hover {
@@ -243,7 +243,7 @@
 /* Amenities Banner Section */
 .amenities-banner {
   padding: 80px 0;
-  background: url("/assets/images/cycling-outdoors.jpg") center/cover no-repeat;
+  background: url("https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211233/cycling-outdoors_fg1s7b.jpg") center/cover no-repeat;
   color: #fff;
   position: relative;
 }
@@ -345,6 +345,8 @@
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  height: 500px;
+  object-fit: cover;
 }
 
 /* Right Content */
