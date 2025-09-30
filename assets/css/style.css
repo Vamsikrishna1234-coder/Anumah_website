@@ -911,7 +911,7 @@ header.hidden {
   text-align: center;
   border-top: 1px solid #333;
   margin-top: 50px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #ffffff;
 }
 .footer-bottom p {
@@ -930,17 +930,29 @@ header.hidden {
   gap: 10px;     
 }
 
-.footer-bottom .tact-favicon {
-  width: 16px;  /* favicon size */
-  height: 16px;
-  object-fit: contain;
-  vertical-align: middle;
-  
-
+.designed-by a.tact-link {
+  display: inline-flex;        /* flex container */
+  align-items: center;         /* vertically center image & text */
+  gap: 5px;                    /* spacing between favicon and text */
+  text-decoration: none;       /* remove underline */
+  color: #fff;
 }
 
+.tact-favicon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.tact-heading {
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
 .footer-bottom a {
-  text-decoration: none;   /* 🔥 removes underline */
+  text-decoration: none;      /* 🔥 removes underline */
   color: #fff;             /* keep white text */
   
   
@@ -950,6 +962,7 @@ header.hidden {
   text-decoration: none;   /* make sure underline doesn't come back on hover */
   color: #f1f1f1;          /* optional hover effect */
 }
+
 
 
 /* responsive tweaks */
