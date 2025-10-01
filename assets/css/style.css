@@ -125,7 +125,32 @@ header.hidden {
   
 }
 .menu-addr{
-  color: #0c0c0c;
+  color: #ffffff;
+}
+/* Style for side menu download button */
+.side-menu .download-btn {
+  list-style: none; /* remove bullet */
+  margin-top: 80px;
+  text-align: center; /* center the button */
+}
+
+.side-menu .download-btn a {
+  display: inline-block;
+  width: 80%; /* button width relative to menu */
+  padding: 12px 20px;
+  background: #ff6600; /* Orange background */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.side-menu .download-btn a:hover {
+  background: #ee5424; /* Darker orange */
+  transform: scale(1.05);
 }
 
 
@@ -914,55 +939,52 @@ header.hidden {
   font-size: 1.1rem;
   color: #ffffff;
 }
+
 .footer-bottom p {
   margin: 8px 0;
 }
+
 .footer-bottom span {
   color: #ffffff;
-  font-weight: bold;
   
 }
+
 .footer-column:first-child {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* aligns logo+address at top */
   align-items: flex-start;     /* ensures everything sticks left */
-  gap: 10px;     
+  gap: 10px;
 }
 
 .designed-by a.tact-link {
   display: inline-flex;        /* flex container */
   align-items: center;         /* vertically center image & text */
-  gap: 5px;                    /* spacing between favicon and text */
+  gap: 2px;                    /* spacing between favicon and text */
   text-decoration: none;       /* remove underline */
   color: #fff;
 }
 
 .tact-favicon {
   width: 15px;
-  height: 15px;
+  height: 14px;
   object-fit: contain;
 }
 
 .tact-heading {
-  font-weight: bold;
+  
   color: #fff;
 }
 
-
-
 .footer-bottom a {
-  text-decoration: none;      /* 🔥 removes underline */
-  color: #fff;             /* keep white text */
-  
-  
+  text-decoration: none;       /* removes underline */
+  color: #fff;                 /* keep white text */
 }
 
 .footer-bottom a:hover {
-  text-decoration: none;   /* make sure underline doesn't come back on hover */
-  color: #f1f1f1;          /* optional hover effect */
+  text-decoration: none;       /* make sure underline doesn't come back on hover */
+  color: #f1f1f1;              /* optional hover effect */
 }
-
 
 
 /* responsive tweaks */

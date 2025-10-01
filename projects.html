@@ -32,19 +32,31 @@
   <!-- Side Menu -->
 <div id="side-menu" class="side-menu">
   <span id="menu-close" class="menu-close">&times;</span>
+
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="aboutus.html">About Us</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="#blogs">Blogs</a></li>
     <li><a href="contactus.html">Contact Us</a></li>
-  </ul><br><br><br><br><br><br><br>
+  </ul>
+
   <h3 class="menu-cont">Contact us</h3>
-  <p class="menu-addr">Plot No.192, Godha Horizon, Kavuri Hills,<br>
-        Madhapur, Hyderabad, Telangana - 500 081<br>
-        Phone: +91 9059 222 690<br>
-        info.anumah@gmail.com</p>
-</div> 
+  <p class="menu-addr">
+    Plot No.192, Godha Horizon, Kavuri Hills,<br>
+    Madhapur, Hyderabad, Telangana - 500 081<br>
+    Phone: +91 9059 222 690<br>
+    info.anumah@gmail.com
+  </p>
+
+  <!-- Download Brochure button below contact -->
+  <div class="download-btn">
+    <a href="assets/videos/Anumah_Agri Grain Avenue_Brochure.pdf" download="Anumah_Brochure.pdf">
+      <i class="fas fa-download"></i> Download Brochure
+    </a>
+  </div>
+</div>
+
 </section>
 
 <!-- White Sticky Header -->
@@ -107,11 +119,11 @@
   <div class="popup-content">
     <span class="close-btn">&times;</span>
     <h3>Enquiry Now</h3>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <textarea placeholder="Message" rows="4" required></textarea>
+    <form id="enquiryForm">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
@@ -189,6 +201,6 @@
 
 <script src="assets/js/sidemenu.js"></script>
 <script src="assets/js/enquirycard.js"></script>
-
+<script src="assets/js/enquiryformfill.js"></script>
 </body>
 </html>

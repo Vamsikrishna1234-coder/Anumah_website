@@ -16,38 +16,51 @@
 
   <div class="header-overlay">
     <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-    <div class="logo"><a href="index.html"><img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211226/Anumah_Logo_ybnkat.png" alt="Logo"></a></div>
+    <div class="logo"><a href="index.html"><img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759302919/Anumah_infra_white_sovjz7.png" alt="Logo"></a></div>
     <a href="#enquiry" class="enquiry-btn">Enquiry Now</a>
   </div>
 
 <!-- Side Menu -->
 <div id="side-menu" class="side-menu">
   <span id="menu-close" class="menu-close">&times;</span>
+
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="aboutus.html">About Us</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="#blogs">Blogs</a></li>
     <li><a href="contactus.html">Contact Us</a></li>
-  </ul><br><br><br><br><br><br><br>
+  </ul>
+
   <h3 class="menu-cont">Contact us</h3>
-  <p class="menu-addr">Plot No.192, Godha Horizon, Kavuri Hills,<br>
-        Madhapur, Hyderabad, Telangana - 500 081<br>
-        Phone: +91 9059 222 690<br>
-        info.anumah@gmail.com</p>
-</div>  
+  <p class="menu-addr">
+    Plot No.192, Godha Horizon, Kavuri Hills,<br>
+    Madhapur, Hyderabad, Telangana - 500 081<br>
+    Phone: +91 9059 222 690<br>
+    info.anumah@gmail.com
+  </p>
+
+  <!-- Download Brochure button below contact -->
+  <div class="download-btn">
+    <a href="assets/videos/Anumah_Agri Grain Avenue_Brochure.pdf" download="Anumah_Brochure.pdf">
+      <i class="fas fa-download"></i> Download Brochure
+    </a>
+  </div>
+</div>
+
 </section>
 
   
-  <div id="enquiryPopup" class="popup">
+  <!-- ================== Popup Card ================== -->
+<div id="enquiryPopup" class="popup">
   <div class="popup-content">
     <span class="close-btn">&times;</span>
     <h3>Enquiry Now</h3>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <textarea placeholder="Message" rows="4" required></textarea>
+    <form id="enquiryForm">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
@@ -71,7 +84,7 @@
       <!-- Left Side: Company Description -->
       <div class="overview-content">
         <h3>Our Story</h3>
-        <p>Founded in 2010, BuildCraft Construction began as a small residential contractor with a vision to transform the construction landscape. Over the past decade, we've grown into a full-service construction company, handling everything from luxury homes to major commercial developments.With more than 15+ years of dedicated service, we have built a reputation for excellence by combining traditional craftsmanship with the latest technological advancements to create sustainable, efficient, and long-lasting structures. Our team of architects, engineers, and skilled professionals work tirelessly to bring client visions to life while maintaining the highest levels of safety, precision, and environmental responsibility.</p>
+        <p>Founded in 2010, Anumah Infra began as a small residential contractor with a vision to transform the construction landscape. Over the past decade, we have grown into a full-service construction company, handling everything from luxury homes to major commercial developments. With more than 15+ years of dedicated service, Anumah Infra has built a reputation for excellence by combining traditional craftsmanship with the latest technological advancements to create sustainable, efficient, and long-lasting structures. Our team of architects, engineers, and skilled professionals work tirelessly to bring client visions to life while maintaining the highest levels of safety, precision, and environmental responsibility.</p>
       </div>
       
       <!-- Right Side: Company Image -->
@@ -95,7 +108,7 @@
     <div class="founder-text">
       <h2>Meet Our Founder</h2>
       <p>
-       Mr. Gowd, the visionary founder of Anumah Infra, has been shaping skylines for over 15+ years. He combines innovation with quality to deliver landmark residential and commercial projects. His leadership philosophy focuses on transparency, customer satisfaction, and sustainable development. Under his guidance, Anumah Infra has successfully completed hundreds of projects across the region. He believes in creating communities, not just buildings, fostering trust with every client. Mr. Gowd emphasizes modern design, cutting-edge technology, and attention to detail in every project. His commitment to excellence has earned numerous awards and industry recognition. He actively mentors his team, nurturing talent and fostering a culture of creativity. Beyond real estate, he engages in social initiatives that contribute to community growth. Driven by passion and vision, Mr. Gowd continues to redefine urban living experiences.
+       Mr.Mahender Reddy, the visionary founder of Anumah Infra, has been shaping skylines for over 15+ years. He combines innovation with quality to deliver landmark residential and commercial projects. His leadership philosophy focuses on transparency, customer satisfaction, and sustainable development. Under his guidance, Anumah Infra has successfully completed hundreds of projects across the region. He believes in creating communities, not just buildings, fostering trust with every client. Mr.Mahender Reddy emphasizes modern design, cutting-edge technology, and attention to detail in every project. His commitment to excellence has earned numerous awards and industry recognition. He actively mentors his team, nurturing talent and fostering a culture of creativity. Beyond real estate, he engages in social initiatives that contribute to community growth. Driven by passion and vision, Mr.Mahender Reddy continues to redefine urban living experiences.
       </p>
     </div>
   </div>
@@ -294,6 +307,6 @@
 
 <script src="assets/js/sidemenu.js"></script>
 <script src="assets/js/enquirycard.js"></script>
-
+<script src="assets/js/enquiryformfill.js"></script>
 </body>
 </html>

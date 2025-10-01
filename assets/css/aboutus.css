@@ -3,8 +3,8 @@
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211228/about_banner_pttnrs.jpg') center/cover;
+    background: 
+                url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759214472/club_house_outside_khhspb.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +39,101 @@
 .hero a {
     text-decoration: none;
     color: white;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -400px;          /* hidden by default */
+  width: 400px;
+  height: 100vh;
+  background-color: #f27921; /* orange theme */
+  color: #fff;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 2000;           /* above other content */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center all items horizontally */
+  overflow-y: auto;
+}
+
+/* Active state (menu shown) */
+.side-menu.active {
+  left: 0;
+}
+
+/* Close button */
+.menu-close {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Menu links */
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;      /* center link text */
+}
+
+.side-menu ul li {
+  margin-bottom: 20px;
+}
+
+.side-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: inline-block;   /* needed for centering and hover */
+}
+
+.side-menu ul li a:hover {
+  color: #ff4d00;
+}
+
+/* Contact heading */
+.menu-cont {
+  color: #ffffff;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* Contact address */
+.menu-addr {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Download Brochure button */
+.download-btn {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.download-btn a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff6600, #e65c00);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn a:hover {
+  background: linear-gradient(135deg, #e65c00, #cc5200);
+  transform: scale(1.05);
 }
 
 

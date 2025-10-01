@@ -320,6 +320,10 @@
   .amenities-content ul {
     columns: 1;
   }
+  .amenities-content ul {
+  columns: 2;
+  column-gap: 20px;
+  }
 }
 
 

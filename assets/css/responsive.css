@@ -21,14 +21,64 @@
   .hero-overlay p {
     font-size: 0.85rem;
   }
-   .side-menu {
-    width: 80%;        /* make it narrower relative to screen size */
-    left: -80%;        /* hide completely offscreen */
-    padding: 15px;     /* reduce padding */
+  #side-menu {
+    width: 250px;
+    padding: 10px;
+    gap: 15px; /* reduced space between sections */
+  }
+
+  #side-menu ul {
+    gap: 10px; /* smaller gap between links */
+  }
+
+  #side-menu ul li a {
+    font-size: 0.9rem;
+  }
+
+  #side-menu .menu-cont {
+    margin-top: 15px;
+  }
+
+  #side-menu .menu-addr {
+    margin-top: 5px;
+  }
+
+  #side-menu .download-btn a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  /*overall menu css */
+  .side-menu {
+    width: 250px;
+    padding: 10px;
+  }
+
+  .side-menu ul li {
+    margin-bottom: 12px;
   }
 
   .side-menu ul li a {
-    font-size: 1rem;   /* slightly smaller text */
+    font-size: 0.9rem;
+  }
+
+  #menu-cont {
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .menu-addr {
+    margin-top: 5px;
+    font-size: 0.85rem;
+  }
+
+  .side-menu .download-btn {
+    margin-top: 30px; /* further reduce top margin */
+  }
+
+  .side-menu .download-btn a {
+    width: 90%;
+    padding: 8px 15px;
+    font-size: 14px;
   }
   .logo img {
     height: 55px;

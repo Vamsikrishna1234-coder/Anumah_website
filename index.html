@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Estate Website</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Anumah InfraDevelopers - The best real estate in Hyderabad offering trusted projects in agrigrain ventures, farmland, and modern infrastructure. Find your dream property in Hyderabad with Anumah.">
+  <meta name="keywords" content="Best Real Estate in Hyderabad, Anumah InfraDevelopers, Real Estate Hyderabad, Agrigrain Ventures, Farmland Hyderabad, Property Investment Hyderabad, Land for Sale Hyderabad, Real Estate Developers Hyderabad, Modern Infrastructure Hyderabad">
+  <meta name="author" content="Anumah InfraDevelopers">
+  <!--styles-->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/aboutus.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
@@ -40,8 +45,13 @@
         Madhapur, Hyderabad, Telangana - 500 081<br>
         Phone: +91 9059 222 690<br>
         info.anumah@gmail.com</p>
+    <li class="download-btn">
+      <a href="assets/videos/Anumah_Agri Grain Avenue_Brochure.pdf" download="Anumah_Brochure.pdf">
+        <i class="fas fa-download"></i> Download Brochure
+      </a>
+    </li>
+
 </div>
-   
 </section>
 
  <!-- White Sticky Header -->
@@ -265,11 +275,11 @@
   <div class="popup-content">
     <span class="close-btn">&times;</span>
     <h3>Enquiry Now</h3>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <textarea placeholder="Message" rows="4" required></textarea>
+    <form id="enquiryForm">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
@@ -326,7 +336,7 @@
         <a href="https://x.com/AnumahInfra" target="_blank"><i class="fab fa-x-twitter"></i></a>
       </div>
     </div>
-
+   
   </div>
 
 
@@ -334,7 +344,7 @@
   <div class="footer-bottom">
   <p>
     © 2025 Anumah InfraDevelopers. All Rights Reserved. | 
-  <span class="designed-by">
+    <span class="designed-by">
   Designed by 
   <a href="https://www.tactadvertising.in/" target="_blank">
     <img src="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759214210/tact_favicon_white_bkv73k.png" 
@@ -343,10 +353,8 @@
     <span class="tact-heading">Tact Advertising</span>
   </a>
 </span>
-
   </p>
 </div>
-
 
 </footer>
 
@@ -360,6 +368,6 @@
 <script src="assets/js/logoslideshow.js"></script>
 <script src="assets/js/carousels.js"></script>
 <script src="assets/js/enquirycard.js"></script>
-
+<script src="assets/js/enquiryformfill.js"></script>
 </body>
 </html>
