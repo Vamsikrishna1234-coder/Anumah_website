@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+.hero-section {
+  display: none;
+}
+.hero-section.main {
+  display: block;
+}
+
 section {
   margin: 0;
   padding: 0;

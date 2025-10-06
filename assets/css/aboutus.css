@@ -1,10 +1,10 @@
 
 
 /* Hero Section */
-.hero {
+.hero1 {
     height: 100vh;
     background: 
-                url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759214472/club_house_outside_khhspb.jpg') center/cover;
+            url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759214472/club_house_outside_khhspb.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

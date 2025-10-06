@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/aboutus.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/png" href="https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211226/Anumah_Logo_ybnkat.png">
 </head>
@@ -56,7 +57,7 @@
   <div class="popup-content">
     <span class="close-btn">&times;</span>
     <h3>Enquiry Now</h3>
-    <form id="enquiryForm">
+    <form id="enquiryForm" action="send_enquiry.php" method="POST">
       <input type="text" name="name" placeholder="Name" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
@@ -68,7 +69,7 @@
 
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero1">
         <div class="hero-content">
             <h6><a href="aboutus.html"></a></h6>
             <p class="tagline"><a href="index.html"></a> </p>
@@ -229,6 +230,40 @@
           <h5>Vikram Singh</h5>
           <span>Industrial Client</span>
         </div>
+        
+        <div class="testimonial-card">
+          <p>"BuildCraft made the entire construction process stress-free. Their team was professional, responsive, and extremely detail-oriented."</p>
+          <h5>Ramesh Kumar</h5>
+          <span>Villa Owner</span>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p>"Their innovative designs and use of sustainable materials impressed us from day one. Highly recommend BuildCraft for commercial projects."</p>
+          <h5>Sneha Patel</h5>
+          <span>Real Estate Developer</span>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p>"Our office renovation was smooth, on time, and within budget. Employees love the modern workspace BuildCraft delivered."</p>
+          <h5>Arjun Rao</h5>
+          <span>Business Owner</span>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+          <p>"They truly understand customer needs. The quality of construction and attention to detail exceeded all expectations."</p>
+          <h5>Kavitha Reddy</h5>
+          <span>Homeowner</span>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card">
+          <p>"BuildCraft has been our trusted partner for years. From planning to execution, their expertise is unmatched."</p>
+          <h5>Vikram Singh</h5>
+          <span>Industrial Client</span>
+        </div>
 
       </div>
     </div>
@@ -307,6 +342,5 @@
 
 <script src="assets/js/sidemenu.js"></script>
 <script src="assets/js/enquirycard.js"></script>
-<script src="assets/js/enquiryformfill.js"></script>
 </body>
 </html>
