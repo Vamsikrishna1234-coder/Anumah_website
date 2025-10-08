@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Your email address (the one that will receive the enquiry)
-    $to = "yegireddivamsikrishna1@gmail.com";  // 🔥 Replace with your email
+    $to = "info.anumah@gmail.com";  // 🔥 Replace with your email
 
     $subject = "New Enquiry Received";
 

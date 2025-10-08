@@ -7,6 +7,7 @@ body {
   url('https://res.cloudinary.com/dg8ib26kr/image/upload/v1759211229/club_house_aiautv.jpg') center/cover no-repeat;
 }
 
+/* Side menu container */
 .side-menu {
   position: fixed;
   top: 0;
@@ -18,18 +19,22 @@ body {
   padding: 20px;
   transition: left 0.3s ease;
   z-index: 2000;           /* above other content */
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;      /* center all items horizontally */
-  overflow-y: auto;
+  
 }
 
 /* Active state (menu shown) */
 .side-menu.active {
   left: 0;
 }
-
+.header-overlay .menu-toggle {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
 /* Close button */
 .menu-close {
   font-size: 2rem;
@@ -45,8 +50,6 @@ body {
 .side-menu ul {
   list-style: none;
   padding: 0;
-  width: 100%;
-  text-align: center;      /* center link text */
 }
 
 .side-menu ul li {
@@ -54,21 +57,28 @@ body {
 }
 
 .side-menu ul li a {
+  display: block;                                 /* makes the whole box clickable */
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  display: inline-block;   /* needed for centering and hover */
+  padding: 5px 5px;                             /* inner spacing */
+  border-radius: 10px;                            /* rounded corners */
+  transition: all 0.3s ease;                      /* smooth hover animation */
 }
 
+/* Hover effect — orange box with white text */
 .side-menu ul li a:hover {
-  color: #ff4d00;
+  background-color: #ffffff;                      /* white background on hover */
+  color: #f27921;                                 /* orange text */
+  border-color: #ffffff;                          /* solid white border */
 }
+
 
 /* Contact heading */
 .menu-cont {
   color: #ffffff;
-  margin-top: 60px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -81,7 +91,6 @@ body {
 
 /* Download Brochure button */
 .download-btn {
-  margin-top: 60px;
   text-align: center;
   width: 100%;
 }
@@ -89,8 +98,8 @@ body {
 .download-btn a {
   display: inline-block;
   padding: 12px 25px;
-  background: linear-gradient(135deg, #ff6600, #e65c00);
-  color: #fff;
+  background: #fff;
+  color: #ff6600;
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -99,7 +108,6 @@ body {
 }
 
 .download-btn a:hover {
-  background: linear-gradient(135deg, #e65c00, #cc5200);
   transform: scale(1.05);
 }
 

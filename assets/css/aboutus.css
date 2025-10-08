@@ -40,6 +40,15 @@
     text-decoration: none;
     color: white;
 }
+.menu-close {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
 .side-menu {
   position: fixed;
   top: 0;
@@ -63,23 +72,13 @@
   left: 0;
 }
 
-/* Close button */
-.menu-close {
-  font-size: 2rem;
-  cursor: pointer;
-  display: block;
-  text-align: right;
-  width: 100%;
-  margin-bottom: 30px;
-  color: #ffffff;
-}
+
 
 /* Menu links */
 .side-menu ul {
   list-style: none;
   padding: 0;
-  width: 100%;
-  text-align: center;      /* center link text */
+  text-align: center;       /* center link text */
 }
 
 .side-menu ul li {
@@ -91,11 +90,16 @@
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  display: inline-block;   /* needed for centering and hover */
+  display: block;   /* needed for centering and hover */
+  padding: 5px 5px;                             /* inner spacing */
+  border-radius: 10px;                            /* rounded corners */
+  transition: all 0.3s ease; 
 }
 
 .side-menu ul li a:hover {
-  color: #ff4d00;
+  background-color: #ffffff;                      /* white background on hover */
+  color: #f27921;                                 /* orange text */
+  border-color: #ffffff;  
 }
 
 /* Contact heading */
@@ -114,7 +118,7 @@
 
 /* Download Brochure button */
 .download-btn {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
   width: 100%;
 }
@@ -122,8 +126,8 @@
 .download-btn a {
   display: inline-block;
   padding: 12px 25px;
-  background: linear-gradient(135deg, #ff6600, #e65c00);
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: #ff6600;
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -131,10 +135,7 @@
   transition: all 0.3s ease;
 }
 
-.download-btn a:hover {
-  background: linear-gradient(135deg, #e65c00, #cc5200);
-  transform: scale(1.05);
-}
+
 
 
 

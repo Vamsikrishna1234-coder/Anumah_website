@@ -3,12 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.hero-section {
-  display: none;
-}
-.hero-section.main {
-  display: block;
-}
+
 
 section {
   margin: 0;
@@ -76,6 +71,16 @@ header.hidden {
   padding: 10px 12px;
   border-radius: 4px;
 }
+/* Close button */
+.menu-close {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
 /* Side menu container */
 .side-menu {
   position: fixed;
@@ -87,7 +92,7 @@ header.hidden {
   color: #fff;
   padding: 20px;
   transition: left 0.3s ease;
-  z-index: 2000;           /* above other content */
+  z-index: 9999;           /* above other content */
   
 }
 
@@ -96,15 +101,6 @@ header.hidden {
   left: 0;
 }
 
-/* Close button */
-.menu-close {
-  font-size: 2rem;
-  cursor: pointer;
-  display: block;
-  text-align: right;
-  margin-bottom: 30px;
-  color: #ffffff;
-}
 
 /* Menu links */
 .side-menu ul {
@@ -117,15 +113,24 @@ header.hidden {
 }
 
 .side-menu ul li a {
+  display: block;                                 /* makes the whole box clickable */
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
+  padding: 5px 5px;                             /* inner spacing */
+  border-radius: 10px;                            /* rounded corners */
+  transition: all 0.3s ease;                      /* smooth hover animation */
 }
 
+/* Hover effect — orange box with white text */
 .side-menu ul li a:hover {
-  color: #ff4d00;
+  background-color: #ffffff;                      /* white background on hover */
+  color: #f27921;                                 /* orange text */
+  border-color: #ffffff;                          /* solid white border */
 }
+
+
 #menu-cont{
   color: #ffffff;
   gap: 30px;
@@ -137,7 +142,7 @@ header.hidden {
 /* Style for side menu download button */
 .side-menu .download-btn {
   list-style: none; /* remove bullet */
-  margin-top: 80px;
+  margin-top: 70px;
   text-align: center; /* center the button */
 }
 
@@ -145,18 +150,17 @@ header.hidden {
   display: inline-block;
   width: 80%; /* button width relative to menu */
   padding: 12px 20px;
-  background: #ff6600; /* Orange background */
-  color: #fff;
+  background: #ffffff; /* Orange background */
+  color: #ff6600;
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .side-menu .download-btn a:hover {
-  background: #ee5424; /* Darker orange */
   transform: scale(1.05);
 }
 
